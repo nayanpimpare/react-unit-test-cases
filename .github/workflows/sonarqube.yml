@@ -22,8 +22,5 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}      
 
-         projectBaseDir:
-         description: Set the sonar.projectBaseDir analysis property
-         required: false
-         default: .
+        
         
