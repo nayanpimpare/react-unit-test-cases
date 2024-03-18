@@ -18,7 +18,12 @@ jobs:
       - name: Test and coverage
         run: npm run test
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v1.8
+        uses: SonarSource/sonarcloud-github-action@v1.8        
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}      
+
+         projectBaseDir:
+         description: Set the sonar.projectBaseDir analysis property
+         required: false
+         default: .
         
