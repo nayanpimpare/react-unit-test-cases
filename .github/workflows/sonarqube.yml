@@ -15,12 +15,13 @@ jobs:
           fetch-depth: 0 
       - name: Install dependencies
         run: npm install
-      - name: Test and coverage
-        run: npm run test -- --coverage --watchAll --no-cache
-      # - name: SonarCloud Scan
-      #   uses: SonarSource/sonarcloud-github-action@master        
+      # - name: Test and coverage
+      #   run: npm run test -- --coverage --watchAll --no-cache
       - uses: actions/checkout@v3
       - uses: ArtiomTr/jest-coverage-report-action@v2
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master        
+     
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}      
 
