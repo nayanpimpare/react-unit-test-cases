@@ -1,6 +1,6 @@
 module.exports = {
   modulePaths: ["node_modules", "./src", "src"],
-  coveragePathIgnorePatterns: ["/node_modules/", ".*.svg", ".*.spec"],
+  coveragePathIgnorePatterns: ["/node_modules/", ".*.svg", ".*.test"],
   collectCoverageFrom: ["src/**/*.js"],
   collectCoverage: false, // remove once tests are built out
   coverageThreshold: {
