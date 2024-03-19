@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+// import "./App.css";
 
-function App(props) {
+function App() {
   // const logo = 1
   const [count, setCount] = useState(0);
 
@@ -13,14 +13,14 @@ function App(props) {
     }
   }, [count]);
 
-  const handleClick = () => {
-    setCount((prevState) => {
-      return prevState + 1;
-    });
-  };
+  // const handleClick = () => {
+  //   setCount((prevState) => {
+  //     return prevState + 1;
+  //   });
+  // };
   return (
     <div className="App">
-      <h1>{props.fname}</h1>
+      <h1>Nayan Pimpare</h1>
       <header className="App-header">
         <h3
           className="App-logo"

@@ -9,23 +9,23 @@ import App from "./App";
 
 describe("App: ", () => {
   test("renders learn react link", () => {
-    const { rerender, unmount } = render(<App {...{ fname: "Nayan" }} />);
+    const { rerender, unmount } = render(<App />);
     const linkElement = screen.getByText(/learn react/i);
 
-    rerender(<App {...{ fname: "Nayan Pimpare" }} />);
+    rerender(<App />);
     expect(linkElement).toBeInTheDocument();
     unmount();
   });
 
   test("should called handleClick function", () => {
-    const { container, unmount } = render(<App />);
+    const { unmount } = render(<App />);
     let count = 0;
     while (count < 5) {
       fireEvent.click(screen.getByTestId("img"));
       count++;
     }
 
-    expect(container.querySelector(".App-link")).toBeInTheDocument();
+    expect(screen.querySelector(".App-link")).toBeInTheDocument();
     unmount();
   });
 });
