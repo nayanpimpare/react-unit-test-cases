@@ -26,7 +26,7 @@ function App(props) {
           className="App-logo"
           data-testid="img"
           alt="logo"
-          onClick={handleClick}
+          // onClick={handleClick}
         >
           LOGO
         </h3>
