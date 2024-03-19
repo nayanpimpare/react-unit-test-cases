@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App(props) {
@@ -23,13 +22,14 @@ function App(props) {
     <div className="App">
       <h1>{props.fname}</h1>
       <header className="App-header">
-        <img
-          src={logo}
+        <h3
           className="App-logo"
           data-testid="img"
           alt="logo"
           onClick={handleClick}
-        />
+        >
+          LOGO
+        </h3>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
