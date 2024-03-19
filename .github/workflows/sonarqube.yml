@@ -17,8 +17,8 @@ jobs:
         run: npm install
       - name: Test and coverage
         run: npm run test -- --coverage --watchAll --no-cache
-      # - name: SonarCloud Scan
-      #   uses: SonarSource/sonarcloud-github-action@v1.8        
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master        
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}      
 
