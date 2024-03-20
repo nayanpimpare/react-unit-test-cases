@@ -13,11 +13,6 @@ function App() {
     }
   }, [count]);
 
-  // const handleClick = () => {
-  //   setCount((prevState) => {
-  //     return prevState + 1;
-  //   });
-  // };
   return (
     <div className="App">
       <h1>Nayan Pimpare</h1>
